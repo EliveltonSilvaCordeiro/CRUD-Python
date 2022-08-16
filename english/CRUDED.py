@@ -4,20 +4,18 @@ main_list = []
 
 terminate_program = False
 while not terminate_program:
-    print('\n_________________________Entry_________________________\n'
-          '\nType "1" to create'
-          '\nType "2" to read'
-          '\nType "3" to update'
-          '\nType "4" to delete'
+    print("""\
+\n_________________________Entry_________________________
 
-          '\nType "5" to generate csv'
-          '\nType "6" to generate json'
-          '\nType "7" to use data from a json file\n'
-
-          '\nNEEDS INTERNET ACCESS (MUST INTERRUPT)'
-          '\nType "8" to generate server to display data in json\n'
-
-          '\nType "9" to exit')
+Type "1" to create
+Type "2" to read
+Type "3" to update
+Type "4" to delete
+Type "5" to generate csv
+Type "6" to generate json
+Type "7" to use data from a json file
+Type "8" to generate local server
+Type "9" to exit""")
 
     try:
         main_var = int(input("\nWhat do you want to do?: "))
