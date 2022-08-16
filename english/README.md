@@ -1,5 +1,7 @@
 # CRUD - Python
 
+![4° Back-End Project Screenshot](https://user-images.githubusercontent.com/105513033/184981957-e0f3cba1-c5a3-49be-a8fd-c71283d68306.png)
+
 <span>
   <img src="https://img.shields.io/badge/STATUS-FINISHED-success" alt="Status: Finished">
   <img src="https://img.shields.io/badge/RELEASE_DATA-AUGUST%202022-informational" alt="Release Data: August 2022">
@@ -36,12 +38,16 @@ These are the main functions that the user can select in the program interface, 
 > > - [Generate Random ID](#generate-random-id)
 > > - [Create New Name](#create-new-name)
 
+&nbsp;
+
 > #### 2 - Read
 > - Run a loop to display the data and format the print
 > - Prints all data currently stored
 >
 > - Makes use of side-function:
 > > - [Check Data](#check-data)
+
+&nbsp;
 
 > #### 3 - Update
 > - Replace pre-existent data in main_list for new data
@@ -54,6 +60,8 @@ These are the main functions that the user can select in the program interface, 
 > > - [Create New ID](#create-new-id)
 > > - [Create New Name](#create-new-name)
 
+&nbsp;
+
 > #### 4 - Delete
 > - Delete pre-existent data in main_list
 > - First the user search for the data it wants to delete
@@ -62,6 +70,8 @@ These are the main functions that the user can select in the program interface, 
 > - Makes use of side-functions:
 > > - [Check Data](#check-data)
 > > - [Sub Search](#sub-search)
+
+&nbsp;
 
 > #### 5 - Generate CSV
 > - Save data in a CSV file
@@ -73,6 +83,8 @@ These are the main functions that the user can select in the program interface, 
 > > - [CSV Filename Valid](#csv-filename-valid)
 > > - [CSV Write](#csv-write)
 
+&nbsp;
+
 > #### 6 - Generate JSON
 > - Save data in a JSON file
 > - Lets the user give a name to the file
@@ -81,6 +93,8 @@ These are the main functions that the user can select in the program interface, 
 > - Makes use of side-functions:
 > > - [Check Data](#check-data)
 > > - [JSON Check and Create](#json-check-and-create)
+
+&nbsp;
 
 > #### 7 - Use Saved JSON
 > - Use a json file to use other functions
@@ -92,6 +106,8 @@ These are the main functions that the user can select in the program interface, 
 > > - [Assure File](#assure-file)
 > > - [Convert to Python Dictionary](#convert-to-python-dictionary)
 
+&nbsp;
+
 > #### 8 - Stabilish Server
 > - Create server with methods GET e POST
 > - Generates a server by getting user's IP address and receiving a PORT
@@ -101,6 +117,7 @@ These are the main functions that the user can select in the program interface, 
 > > - [Define Port](#define-port)
 > > - [Create Server](#create-server)
 
+&nbsp;
 &nbsp;
 
 ### 🔧 Side Functions
@@ -133,11 +150,15 @@ The Side Functions were created with the main objective of controling user error
 > > - [6 - Generate JSON](#6---generate-json)
 > > - [8 - Stabilish Server](#8---stabilish-server)
 
+&nbsp;
+
 > #### Generate Random ID
 > - The random ID have 8 digits and can not match any other pre-existing ID, if it match a pre-existing ID, generates another one
 >
 > - This Side Function is used on:
 > > - [1 - Create](#1---create)
+
+&nbsp;
 
 > #### Create New Name
 > - Checks the name recieved by the user to see if it already exists, then if it exists, returns **"already_exists"**
@@ -146,11 +167,15 @@ The Side Functions were created with the main objective of controling user error
 > > - [1 - Create](#1---create)
 > > - [3 - Update](#3---update)
 
+&nbsp;
+
 > #### Create New ID
 > - Checks the ID recieved by the user to see if it already exists,then if it exists, returns **"already_exists"**
 >
 > - This Side Function is used on:
 > > - [3 - Update](#3---update)
+
+&nbsp;
 
 > #### Sub Search
 > - Asks the user the search method, search by ID or Name
@@ -166,6 +191,8 @@ The Side Functions were created with the main objective of controling user error
 > > #### match_name
 > > > - Search for registered name in data, if matchs a existent name, returns the **index** where the data is stored, else returns **"not_match"**
 
+&nbsp;
+
 > #### CSV Filename Valid
 > - Check for filename special caracters
 > - If the filename contains special characters it will not be saved and will return False
@@ -173,12 +200,16 @@ The Side Functions were created with the main objective of controling user error
 > - This Side Function is used on:
 > > - [5 - Generate CSV](#5---generate-csv)
 
+&nbsp;
+
 > #### CSV Write
 > - Write current data in csv file
 > - Makes use of loops and indexing to parse data in python dictionary to CSV
 >
 > - This Side Function is used on:
 > > - [5 - Generate CSV](#5---generate-csv)
+
+&nbsp;
 
 > #### JSON Check and Create
 > - Check filename before saving JSON
@@ -188,6 +219,8 @@ The Side Functions were created with the main objective of controling user error
 > - This Side Function is used on:
 > > - [6 - Generate JSON](#6---generate-json)
 
+&nbsp;
+
 > #### Assure File
 > - Try accessing the JSON file
 > - Receives filename from the user, if the filename does not end with ".json", it adds it at the end of the filename and search for it
@@ -196,6 +229,8 @@ The Side Functions were created with the main objective of controling user error
 > - This Side Function is used on:
 > > - [7 - Use Saved JSON](#7---use-saved-json)
 
+&nbsp;
+
 > #### Convert to Python Dictionary
 > - Converts the accessed json
 > - The json text received is converted to a python dictionary to finally be used as current data for the program
@@ -203,11 +238,15 @@ The Side Functions were created with the main objective of controling user error
 > - This Side Function is used on:
 > > - [7 - Use Saved JSON](#7---use-saved-json)
 
+&nbsp;
+
 > #### Define Port
 > - Control erroneus inputs from the user, more specific not typing numbers
 >
 > - This Side Function is used on:
 > > - [8 - Stabilish Server](#8---stabilish-server)
+
+&nbsp;
 
 > #### Create Server
 > - Tries creating the server
@@ -223,16 +262,16 @@ The Side Functions were created with the main objective of controling user error
 > - This class have two functions, **"do_GET"** and **"do_POST"** that make the server able to suport methods GET and POST respectively
 
 &nbsp;
+&nbsp;
 
 ## 📷 Screenshots
 
-
+![Test1_screenshot](https://user-images.githubusercontent.com/105513033/184982080-5844673a-891c-43d9-be12-8730d7bc76ef.png)
+![Test2_screenshot](https://user-images.githubusercontent.com/105513033/184982121-10fce7eb-f7a7-484f-a778-3f74556b8f1f.png)
 
 &nbsp;
 
 ## 🗂️ Executable Download
-
-&nbsp;
 
 You can download the file [here](https://www.mediafire.com/file/kc8c7zc8jmjtb9z/4_BEP_CRUD.exe)
 
