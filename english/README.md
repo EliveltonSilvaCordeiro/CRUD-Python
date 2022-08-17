@@ -10,13 +10,18 @@
 
 &nbsp;
 
-## 🛠️ Functions
+## Content
+
+- [Main functions](#-main-functions)
+- [Side functions](#-side-functions)
+- [Screenshots](#-screenshots)
+- [Download Executable](#-download-executable)
 
 &nbsp;
 
-### 🔨 Main functions
+## 🔨 Main functions
 
-These are the main functions that the user can select in the program interface, all the functions make use of one or more [Side Functions](#🔧-side-functions).
+These are the main functions that the user can select in the program interface, all the functions make use of one or more [Side Functions](#-side-functions)
 
 - [1 - Create](#1---create)
 - [2 - Read](#2---read)
@@ -29,7 +34,7 @@ These are the main functions that the user can select in the program interface, 
 
 &nbsp;
 
-> #### 1 - Create
+> ### 1 - Create
 > - Creates new data and store it in the main_list
 > - Must fill the name and descripition to create new data, ID is randomly generated 
 > - Functions [2](#2---read), [3](#3---update), [4](#4---delete), [5](#5---generate-csv), [6](#6---generate-json) and [8](#8---stabilish-server) can not be used with no data saved, thus, making this the first function to be used when first running the program
@@ -40,7 +45,7 @@ These are the main functions that the user can select in the program interface, 
 
 &nbsp;
 
-> #### 2 - Read
+> ### 2 - Read
 > - Run a loop to display the data and format the print
 > - Prints all data currently stored
 >
@@ -49,8 +54,8 @@ These are the main functions that the user can select in the program interface, 
 
 &nbsp;
 
-> #### 3 - Update
-> - Replace pre-existent data in main_list for new data
+> ### 3 - Update
+> - Replace pre-existent data in main list for new data
 > - First the user search for the data it wants to update
 > - If the data is finded the user updates the ID, name and descripiton, but ID and Name can not be pre-existent
 >
@@ -62,7 +67,7 @@ These are the main functions that the user can select in the program interface, 
 
 &nbsp;
 
-> #### 4 - Delete
+> ### 4 - Delete
 > - Delete pre-existent data in main_list
 > - First the user search for the data it wants to delete
 > - If the data is finded it is deleted in sequence
@@ -73,7 +78,7 @@ These are the main functions that the user can select in the program interface, 
 
 &nbsp;
 
-> #### 5 - Generate CSV
+> ### 5 - Generate CSV
 > - Save data in a CSV file
 > - Lets the user give a name to the file
 > - Use loops and indexing to write current data in the file
@@ -85,7 +90,7 @@ These are the main functions that the user can select in the program interface, 
 
 &nbsp;
 
-> #### 6 - Generate JSON
+> ### 6 - Generate JSON
 > - Save data in a JSON file
 > - Lets the user give a name to the file
 > - Use JSON library to transform current data to JSON
@@ -96,7 +101,7 @@ These are the main functions that the user can select in the program interface, 
 
 &nbsp;
 
-> #### 7 - Use Saved JSON
+> ### 7 - Use Saved JSON
 > - Use a json file to use other functions
 > - It also accepts the JSON file's path
 > - The user can select a saved json file to import all data from this file and use as current data for all the other functions
@@ -108,7 +113,7 @@ These are the main functions that the user can select in the program interface, 
 
 &nbsp;
 
-> #### 8 - Stabilish Server
+> ### 8 - Stabilish Server
 > - Create server with methods GET and POST
 > - Generates a server by getting user's IP address and receiving a PORT
 >
@@ -120,8 +125,8 @@ These are the main functions that the user can select in the program interface, 
 &nbsp;
 &nbsp;
 
-### 🔧 Side Functions
-The Side Functions were created with the main objective of controling user errors, while also spliting the functions objectives of the [Main Functions](#🔨-main-functions).
+## 🔧 Side Functions
+The Side Functions were created with the main objective of controling user errors, while also spliting the functions objectives of the [Main Functions](#-main-functions).
 
 - [Check Data](#check-data)
 - [Generate Random ID](#generate-random-id)
@@ -138,7 +143,7 @@ The Side Functions were created with the main objective of controling user error
 
 &nbsp;
 
-> #### Check Data
+> ### Check Data
 > - Checks if there is any data registered, if not return **False**
 > - This side function is responsible to prevent errors in most functions, more specifically Main Functions that needs data to be used
 >
@@ -152,7 +157,7 @@ The Side Functions were created with the main objective of controling user error
 
 &nbsp;
 
-> #### Generate Random ID
+> ### Generate Random ID
 > - The random ID have 8 digits and can not match any other pre-existing ID, if it match a pre-existing ID, generates another one
 >
 > - This Side Function is used on:
@@ -160,7 +165,7 @@ The Side Functions were created with the main objective of controling user error
 
 &nbsp;
 
-> #### Create New Name
+> ### Create New Name
 > - Checks the name recieved by the user to see if it already exists, then if it exists, returns **"already_exists"**
 >
 > - This Side Function is used on:
@@ -169,7 +174,7 @@ The Side Functions were created with the main objective of controling user error
 
 &nbsp;
 
-> #### Create New ID
+> ### Create New ID
 > - Checks the ID recieved by the user to see if it already exists,then if it exists, returns **"already_exists"**
 >
 > - This Side Function is used on:
@@ -177,7 +182,7 @@ The Side Functions were created with the main objective of controling user error
 
 &nbsp;
 
-> #### Sub Search
+> ### Sub Search
 > - Asks the user the search method, search by ID or Name
 > - It is used to specify a data registered
 >
@@ -186,14 +191,14 @@ The Side Functions were created with the main objective of controling user error
 > > - [4 - Delete](#4---delete)
 >
 > - This side function makes use of another functions that are:
-> > #### match_id
+> > ### match_id
 > > > - Search for registered ID in data, if matchs a existent ID, returns the **index** where the data is stored, else returns **"not_match"**
-> > #### match_name
+> > ### match_name
 > > > - Search for registered name in data, if matchs a existent name, returns the **index** where the data is stored, else returns **"not_match"**
 
 &nbsp;
 
-> #### CSV Filename Valid
+> ### CSV Filename Valid
 > - Check for filename special caracters
 > - If the filename contains special characters it will not be saved and will return False
 >
@@ -202,7 +207,7 @@ The Side Functions were created with the main objective of controling user error
 
 &nbsp;
 
-> #### CSV Write
+> ### CSV Write
 > - Write current data in csv file
 > - Makes use of loops and indexing to parse data in python dictionary to CSV
 >
@@ -211,7 +216,7 @@ The Side Functions were created with the main objective of controling user error
 
 &nbsp;
 
-> #### JSON Check and Create
+> ### JSON Check and Create
 > - Check filename before saving JSON
 > - If the filename contains special characters it will not be saved and will return False
 > - Else, all current data will be registered as JSON
@@ -221,7 +226,7 @@ The Side Functions were created with the main objective of controling user error
 
 &nbsp;
 
-> #### Assure File
+> ### Assure File
 > - Try accessing the JSON file
 > - Receives filename from the user, if the filename does not end with ".json", it adds it at the end of the filename and search for it
 > - If file is finded returns the text of the file
@@ -231,7 +236,7 @@ The Side Functions were created with the main objective of controling user error
 
 &nbsp;
 
-> #### Convert to Python Dictionary
+> ### Convert to Python Dictionary
 > - Converts the accessed json
 > - The json text received is converted to a python dictionary to finally be used as current data for the program
 >
@@ -240,7 +245,7 @@ The Side Functions were created with the main objective of controling user error
 
 &nbsp;
 
-> #### Define Port
+> ### Define Port
 > - Control erroneus inputs from the user, more specific not typing numbers
 >
 > - This Side Function is used on:
@@ -248,7 +253,7 @@ The Side Functions were created with the main objective of controling user error
 
 &nbsp;
 
-> #### Create Server
+> ### Create Server
 > - Tries creating the server
 > - It is there in to prevent errors, for example an invalid IP address
 > - This function makes use of the [NeuralHTTP](#class--neuralhttp) class in the file
@@ -258,10 +263,9 @@ The Side Functions were created with the main objective of controling user error
 
 &nbsp;
 
-> #### **CLASS** > NeuralHTTP
+> ### **CLASS** > NeuralHTTP
 > - This class have two functions, **"do_GET"** and **"do_POST"** that make the server able to suport methods GET and POST respectively
 
-&nbsp;
 &nbsp;
 
 ## 📷 Screenshots
@@ -271,7 +275,7 @@ The Side Functions were created with the main objective of controling user error
 
 &nbsp;
 
-## 🗂️ Executable Download
+## 💾 Executable Download
 
 You can download the project as an executable [here](https://www.mediafire.com/file/kc8c7zc8jmjtb9z/4_BEP_CRUD.exe)
 
