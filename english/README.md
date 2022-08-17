@@ -109,7 +109,7 @@ These are the main functions that the user can select in the program interface, 
 &nbsp;
 
 > #### 8 - Stabilish Server
-> - Create server with methods GET e POST
+> - Create server with methods GET and POST
 > - Generates a server by getting user's IP address and receiving a PORT
 >
 > - Makes use of side-functions:
@@ -273,5 +273,5 @@ The Side Functions were created with the main objective of controling user error
 
 ## 🗂️ Executable Download
 
-You can download the file [here](https://www.mediafire.com/file/kc8c7zc8jmjtb9z/4_BEP_CRUD.exe)
+You can download the project as an executable [here](https://www.mediafire.com/file/kc8c7zc8jmjtb9z/4_BEP_CRUD.exe)
 
