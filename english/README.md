@@ -15,7 +15,7 @@
 - [Main functions](#-main-functions)
 - [Side functions](#-side-functions)
 - [Screenshots](#-screenshots)
-- [Download Executable](#-download-executable)
+- [Download Executable](#-executable-download)
 
 &nbsp;
 
